@@ -8,8 +8,14 @@ def map(source)
 end
 
 def reduce(source, initial_value = 0)
-  acc = initial_value
-  i = 0
+  if initial_value
+    acc = initial_value
+    i = 0
+  else
+    acc = source[0]
+    i = 1
+  end
+  
   while i < source.length do
     acc = yield(acc, source[i])
     i += 1
