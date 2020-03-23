@@ -8,7 +8,7 @@ def map(source)
 end
 
 def reduce(source, initial_value = nil)
-  acc = initial_value
+  acc = initial_value || source[0]
   source.length.times do |index|
     acc = yield(acc, source[index])
   end
