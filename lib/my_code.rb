@@ -12,6 +12,7 @@ def reduce(source, initial_value = 0)
   i = 0
   while i < source.length do
     acc = yield(acc, source[i])
+    i += 1
   end
   acc
 end
