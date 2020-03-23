@@ -7,7 +7,7 @@ def map(source)
   result
 end
 
-def reduce(source, initial_value = nil)
+def reduce(source, initial_value = 0)
   acc = initial_value
   i = 0
   while i < source.length do
