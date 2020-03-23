@@ -7,7 +7,7 @@ def map(source)
   result
 end
 
-def reduce(source, initial_value = 0)
+def reduce(source, initial_value = nil)
   if initial_value
     acc = initial_value
     i = 0
