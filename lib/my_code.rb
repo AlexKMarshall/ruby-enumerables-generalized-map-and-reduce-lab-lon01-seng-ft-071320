@@ -6,3 +6,6 @@ def map(source)
   end
   result
 end
+
+def reduce(source)
+  
