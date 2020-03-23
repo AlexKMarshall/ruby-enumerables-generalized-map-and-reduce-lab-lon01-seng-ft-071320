@@ -9,9 +9,9 @@ end
 
 def reduce(source, initial_value = nil)
   acc = initial_value
-  source.length.times do |index|
-    
-    acc = yield(acc, source[index])
+  i = 0
+  while i < source.length do
+    acc = yield(acc, source[i])
   end
   acc
 end
