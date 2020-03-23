@@ -8,4 +8,8 @@ def map(source)
 end
 
 def reduce(source)
-  
+  source.length.times do |index|
+    acc = yield(acc, source[index])
+  end
+  acc
+end
